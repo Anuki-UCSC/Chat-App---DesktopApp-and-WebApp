@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="main-frame" stylesheets="@style/application.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chatapp.views.MainFrame">
+   <children>
+      <VBox fx:id="sideBar" styleClass="side-bar" stylesheets="@style/application.css">
+         <children>
+            <VBox prefHeight="120.0" prefWidth="490.0">
+               <children>
+                  <Label styleClass="chat-title" text="mChat :)" />
+               </children>
+            </VBox>
+            <VBox id="Chat1Global" fx:id="Chat1Global" onMouseClicked="#clickMenu" styleClass="side-bar-menu" stylesheets="@style/application.css">
+               <children>
+                  <HBox>
+                     <children>
+                        <VBox prefHeight="80.0" prefWidth="80.0" styleClass="item-avatar">
+                           <children>
+                              <Pane maxHeight="80.0" maxWidth="80.0" minHeight="80.0" minWidth="80.0" prefHeight="80.0" prefWidth="80.0" styleClass="item-avatar">
+                                 <children>
+                                    <Label layoutX="26.0" layoutY="16.0" styleClass="item-avatar-label" text="G" textAlignment="CENTER" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </VBox>
+                        <VBox>
+                           <children>
+                              <Label styleClass="item-name" text="Global Chat" />
+                              <Label fx:id="recentChatLabel1" styleClass="item-message" text="" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox id="Chat2" fx:id="Chat2" onMouseClicked="#clickMenu" styleClass="side-bar-menu" stylesheets="@style/application.css">
+               <children>
+                  <HBox>
+                     <children>
+                        <VBox prefHeight="80.0" prefWidth="80.0" styleClass="item-avatar">
+                           <children>
+                              <Pane maxHeight="80.0" maxWidth="80.0" minHeight="80.0" minWidth="80.0" prefHeight="80.0" prefWidth="80.0" styleClass="item-avatar">
+                                 <children>
+                                    <Label layoutX="26.0" layoutY="16.0" styleClass="item-avatar-label" text="C" textAlignment="CENTER" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </VBox>
+                        <VBox>
+                           <children>
+                              <Label styleClass="item-name" text="Chat 1" />
+                              <Label fx:id="recentChatLabel2" styleClass="item-message" text="" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox id="Chat3" fx:id="Chat3" layoutX="10.0" layoutY="80.0" onMouseClicked="#clickMenu" styleClass="side-bar-menu" stylesheets="@style/application.css">
+               <children>
+                  <HBox>
+                     <children>
+                        <VBox prefHeight="80.0" prefWidth="80.0" styleClass="item-avatar">
+                           <children>
+                              <Pane maxHeight="80.0" maxWidth="80.0" minHeight="80.0" minWidth="80.0" prefHeight="80.0" prefWidth="80.0" styleClass="item-avatar">
+                                 <children>
+                                    <Label layoutX="26.0" layoutY="16.0" styleClass="item-avatar-label" text="C" textAlignment="CENTER" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </VBox>
+                        <VBox>
+                           <children>
+                              <Label styleClass="item-name" text="Chat 2" />
+                              <Label fx:id="recentChatLabel3" styleClass="item-message" text="" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+
+               </children>
+      </VBox>
+      <StackPane fx:id="contentView" HBox.hgrow="ALWAYS">
+         <children>
+            <VBox style="-fx-background-color: white;">
+               <children>
+                  <HBox fx:id="imageView" alignment="BOTTOM_CENTER" prefHeight="475.0" prefWidth="790.0" />
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" text="mChat">
+                           <font>
+                              <Font name="Brush Script MT Italic" size="72.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="55.0" prefWidth="790.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="55.0" prefWidth="709.0">
+                           <children>
+                              <Label text="Welcome to mChat Platform." />
+                              <Label text="Click your chat to view messages." />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" />
+               </children></VBox>
+         </children>
+      </StackPane>
+   </children>
+</HBox>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="content-view" stylesheets="@style/application.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chatapp.views.Product">
+   <children>
+      <VBox styleClass="content-view-header" stylesheets="@style/application.css">
+         <children>
+            <Label styleClass="title" stylesheets="@style/application.css" text="Product" />
+         </children>
+      </VBox>
+   </children>
+</VBox>

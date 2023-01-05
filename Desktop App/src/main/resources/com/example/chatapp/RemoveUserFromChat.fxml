@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-border-width: 2; -fx-border-color: grey;" stylesheets="@style/application.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chatapp.views.RemoveUserFromChat">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0" styleClass="popup-title">
+         <children>
+            <VBox alignment="CENTER" styleClass="icon">
+               <children>
+                  <SVGPath content="M12 23c0-4.726 2.996-8.765 7.189-10.319 0.509-1.142 0.811-2.411 0.811-3.681 0-4.971 0-9-6-9s-6 4.029-6 9c0 3.096 1.797 6.191 4 7.432v1.649c-6.784 0.555-12 3.888-12 7.918h12.416c-0.271-0.954-0.416-1.96-0.416-3z&#10;M23 14c-4.971 0-9 4.029-9 9s4.029 9 9 9c4.971 0 9-4.029 9-9s-4.029-9-9-9zM28 24h-10v-2h10v2z" scaleX="2.0" scaleY="2.0" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER_LEFT" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label text="Remove Users" />
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" styleClass="popup-body" VBox.vgrow="ALWAYS">
+         <children>
+            <ScrollPane prefHeight="320.0" prefWidth="420.0">
+               <content>
+                  <VBox fx:id="vContainer" prefHeight="100.0" prefWidth="300.0">
+                     <children>
+                        <HBox>
+                           <!--                     <children>-->
+                           <!--                        <SVGPath content="M30.5 0h-12c-0.825 0-1.977 0.477-2.561 1.061l-14.879 14.879c-0.583 0.583-0.583 1.538 0 2.121l12.879 12.879c0.583 0.583 1.538 0.583 2.121 0l14.879-14.879c0.583-0.583 1.061-1.736 1.061-2.561v-12c0-0.825-0.675-1.5-1.5-1.5zM23 12c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z" />-->
+                           <!--                        <Label text="Foods" />-->
+                           <!--                     </children>-->
+                        </HBox>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="80.0" prefWidth="200.0">
+         <children>
+            <VBox prefHeight="80.0" prefWidth="326.0" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+               <children>
+                  <VBox>
+                     <children>
+                        <HBox prefHeight="0.0" prefWidth="301.0" />
+                        <HBox prefHeight="0.0" prefWidth="301.0">
+                           <children>
+                              <Label text="Click the user to select or deselect.">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="selectedLabel1">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <HBox spacing="20.0">
+               <children>
+                  <Button fx:id="cancelBtn" mnemonicParsing="false" onAction="#cancel" text="CANCEL">
+                     <styleClass>
+                        <String fx:value="wid-120" />
+                        <String fx:value="sp-5" />
+                     </styleClass>
+                  </Button>
+                  <Button fx:id="removeBtn" mnemonicParsing="false" onAction="#remove" styleClass="wid-120" text="REMOVE" />
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="30.0" />
+               </padding>
+            </HBox>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>

@@ -1,0 +1,8 @@
+Run Desktop Application before hand
+
+go in to reactjs project and give following commands
+
+npm install
+
+npm start
+

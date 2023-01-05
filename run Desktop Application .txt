@@ -1,0 +1,33 @@
+download Javafx-sdk-19
+
+open project in intellij.
+Files >> files >> ProjectStructure >> Libraries >> +(add) >> add javafx-sdk\lib path >> Apply >> ok
+
+Run >> Edit Configurations >> +(add)>> add application 
+	- give main class as ChatApplication
+	- click more options or Alt+M >> VM Options, write following(path should be edited accordingly)
+
+--module-path "C:\Program Files\Java\javafx-sdk-19\lib" 
+--add-modules javafx.controls,javafx.fxml
+
+mvn clean
+mvn install
+
+run the application
+
+
+
+
+
+Download RabbitMQ to your local machine.
+
+get rabbitMQ console and type following commands
+
+	rabbitmq-plugins enable rabbitmq_management
+
+	rabbitmq-service.bat start
+
+
+
+
+
